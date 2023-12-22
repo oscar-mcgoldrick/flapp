@@ -5,7 +5,7 @@ const PageJoblists = () => {
   useEffect(() => {
     getFlatJobList()
       .then((list) => {
-        // console.log(list)
+        console.log(list)
       })
   }, [])
   return (

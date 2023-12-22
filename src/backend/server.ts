@@ -7,7 +7,7 @@ const server = express()
 const port = 3001
 
 server.get('/api', (req: Request, res: Response) => {
-  res.send('Backend Response')
+  res.send('Backend Response test ting')
 })
 
 server.listen(port, () => {
