@@ -1,10 +1,11 @@
 import express, { Request, Response } from 'express'
+import 'dotenv/config'
 
 import flatRoutes from './routes/flats'
 import googleRoutes from './routes/google'
 
 const server = express()
-const port = 3001
+const port = process.env.EXPRESS_PORT
 
 server.get('/api', (req: Request, res: Response) => {
   res.send('Backend Response test ting')
