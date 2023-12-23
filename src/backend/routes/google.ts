@@ -5,11 +5,12 @@ const router = express.Router()
 
 router.post('/', async (req, res) => {
   try {
-    const creds = req.body
+    console.log('google route hit')
+    const creds = req.body.creds
     const payload = await google.verify(creds)
     res.send(payload)
-  } catch {
-    res.sendStatus(500)
+  } catch (e) {
+    res.send(e)
   }
 })
 

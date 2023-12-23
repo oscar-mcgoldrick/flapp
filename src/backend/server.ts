@@ -6,6 +6,8 @@ import googleRoutes from './routes/google'
 const server = express()
 const port = 3001
 
+server.use(express.json())
+
 server.get('/api', (req: Request, res: Response) => {
   res.send('Backend Response test ting')
 })
