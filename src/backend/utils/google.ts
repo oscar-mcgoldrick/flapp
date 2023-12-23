@@ -12,7 +12,6 @@ export async function verify(token: any) {
       '788391161069-38t35smfnpc9np41mvb79raat8ci813p.apps.googleusercontent.com',
   })
   const payload = await ticket.getPayload()
-  console.log('payload: ', payload)
 
   return payload
 }

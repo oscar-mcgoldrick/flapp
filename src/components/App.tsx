@@ -10,7 +10,6 @@ import Footer from "./Footer";
 function App() {
 
   const handleSuccess = async (creds: string | undefined) => {
-    console.log("token= ", creds)
     const payload = await verifyCredentials(creds ? creds : "")
     console.log("verified creds = ", payload)
   }
